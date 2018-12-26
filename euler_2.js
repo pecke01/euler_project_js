@@ -8,15 +8,13 @@ function evenFibonnaci(number){
     sum = 0
     current = 1
     prev = 0
-    while(current<number){
-        
+    while(current<number){        
         if(current%2==0){
-            sum += current;
+            sum += current
         }
         temp = current
         current = prev +current
-        prev = temp
-        
+        prev = temp        
     }
     console.log("Sum: "+sum)
     return sum;
